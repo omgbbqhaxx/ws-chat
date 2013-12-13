@@ -14,7 +14,7 @@ class IndexHandler(tornado.web.RequestHandler):
         <br>
         <ul></ul>
         <script>
-        var ws = new WebSocket("ws://127.0.0.1:8000/echo");
+        var ws = new WebSocket("ws://chatsocial.me:8000/echo");
         ws.onmessage = function(msg) {
             var li = document.createElement("li")
             li.innerHTML = msg.data;
@@ -58,6 +58,6 @@ app = tornado.web.Application([
 ])
 
 if __name__ == '__main__':
-    print('Listening on http://127.0.0.1:8000')
+    print('Listening on http://146.185.130.80:8000')
     app.listen(8000)
     tornado.ioloop.IOLoop.instance().start()
