@@ -29,7 +29,7 @@ jQuery(function($){
     // Note: You have to change the host var
     // if your client runs on a different machine than the websocket server
     
-    var host = "ws://chatsocial.me:8888/ws";
+    var host = "ws://chatsocial.me:8888/echo";
     var socket = new WebSocket(host);
     //console.log("socket status: " + socket.readyState);
     var $txt = $("#data");
